@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dafna Gelbgiser, PhD | Published Work</title>
+<meta name="description" content="Dafna Gelbgiser, PhD — faculty in the Department of Labor Studies at Tel Aviv University. Research on inequality, education, organizations, and research methodology.">
+<link rel="canonical" href="https://www.dafnagelbgiser.com/">
+<meta property="og:title" content="Dafna Gelbgiser, PhD | Home">
+<meta property="og:description" content="Dafna Gelbgiser, PhD — inequality, education, organizations, and methodology.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dafnagelbgiser.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   SHARED STYLES — this <style> block is identical on every page.
+   To change the look site-wide, update it in each .html file.
+   To change CONTENT, just edit the text inside <main> below.
+   ============================================================ */
+:root{
+  --ink:#1c2128;
+  --paper:#f9f7f2;
+  --accent:#8a2b34;
+  --accent-soft:rgba(138,43,52,.08);
+  --muted:#6f675b;
+  --line:#e6e0d4;
+  --display:'Spectral',Georgia,'Times New Roman',serif;
+  --body:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+.wrap{
+  max-width:1100px;margin:0 auto;padding:0 28px;
+  display:grid;grid-template-columns:290px 1fr;gap:64px;
+  align-items:start;
+}
+/* ---------- Sidebar ---------- */
+.sidebar{
+  position:sticky;top:48px;padding:48px 0;
+}
+.mark{margin-bottom:22px}
+.mark svg{width:74px;height:42px;display:block;opacity:.8}
+.avatar{
+  width:96px;height:96px;border-radius:3px;border:1px solid var(--line);
+  background:#fff;display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:34px;color:var(--accent);
+  letter-spacing:.02em;margin-bottom:20px;overflow:hidden;
+}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.name{
+  font-family:var(--display);font-weight:600;font-size:27px;line-height:1.15;
+  margin:0 0 4px;letter-spacing:-.01em;
+}
+.role{font-size:14.5px;color:var(--muted);margin:0 0 26px;line-height:1.5}
+nav ul{list-style:none;margin:0 0 30px;padding:0}
+nav li{margin:0}
+nav a{
+  display:block;padding:7px 0;color:var(--ink);font-size:15.5px;
+  border-bottom:1px solid transparent;width:fit-content;
+}
+nav a:hover{text-decoration:none;color:var(--accent)}
+nav a[aria-current="page"]{
+  color:var(--accent);border-bottom-color:var(--accent);font-weight:500;
+}
+.ids{
+  font-family:var(--mono);font-size:11.5px;line-height:1.9;color:var(--muted);
+  border-top:1px solid var(--line);padding-top:20px;
+}
+.ids .lbl{display:block;color:var(--ink);opacity:.55;font-size:10px;
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.ids p{margin:0 0 14px}
+.ids a{color:var(--accent)}
+/* ---------- Main ---------- */
+main{padding:48px 0 80px;max-width:680px}
+.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 14px;
+}
+h1.page{font-family:var(--display);font-weight:600;font-size:32px;
+  line-height:1.15;letter-spacing:-.01em;margin:0 0 28px}
+main p{margin:0 0 20px}
+main h2{font-family:var(--display);font-weight:600;font-size:21px;
+  margin:42px 0 6px;line-height:1.25}
+main h2 + .meta{margin-top:0}
+.lede{font-size:19px;line-height:1.6}
+hr.rule{border:0;border-top:1px solid var(--line);margin:38px 0}
+/* publications */
+.pub-group{font-family:var(--mono);font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);margin:40px 0 18px}
+.note{font-size:14.5px;color:var(--muted);margin:-4px 0 22px}
+ol.pubs{list-style:none;margin:0;padding:0;counter-reset:pub}
+ol.pubs li{
+  position:relative;padding:0 0 20px 34px;margin:0 0 20px;
+  border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.6;
+}
+ol.pubs li:last-child{border-bottom:0}
+ol.pubs li::before{
+  counter-increment:pub;content:counter(pub,decimal-leading-zero);
+  position:absolute;left:0;top:1px;font-family:var(--mono);font-size:11px;
+  color:var(--muted);padding-top:3px;
+}
+.feat{display:block;font-size:13px;color:var(--muted);margin-top:5px;font-style:italic}
+/* contact card */
+.contact-line{font-size:18px;margin:0 0 10px}
+.btn{
+  display:inline-block;font-family:var(--mono);font-size:13px;letter-spacing:.04em;
+  border:1px solid var(--accent);color:var(--accent);padding:11px 20px;border-radius:2px;
+  margin-top:8px;
+}
+.btn:hover{background:var(--accent);color:#fff;text-decoration:none}
+.docnote{background:var(--accent-soft);border-left:3px solid var(--accent);
+  padding:14px 18px;border-radius:0 3px 3px 0;font-size:14.5px;margin:24px 0}
+/* ---------- Responsive ---------- */
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:0;padding:0 22px}
+  .sidebar{position:static;padding:36px 0 8px;border-bottom:1px solid var(--line)}
+  .mark{display:none}
+  nav ul{display:flex;flex-wrap:wrap;gap:4px 22px;margin-bottom:26px}
+  nav a{padding:4px 0}
+  .ids{display:none}
+  main{padding:34px 0 60px}
+  h1.page{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ========== SIDEBAR (same on every page) ========== -->
+  <aside class="sidebar">
+    <div class="mark" aria-hidden="true">
+      <!-- faint network motif: a nod to social network analysis -->
+      <svg viewBox="0 0 74 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="8" y1="10" x2="30" y2="6"  stroke="#8a2b34" stroke-width="1" opacity=".35"/>
+        <line x1="30" y1="6" x2="52" y2="18" stroke="#8a2b34" stroke-width="1" opacity=".35"/>
+        <line x1="8" y1="10" x2="22" y2="32" stroke="#8a2b34" stroke-width="1" opacity=".35"/>
+        <line x1="22" y1="32" x2="52" y2="18" stroke="#8a2b34" stroke-width="1" opacity=".35"/>
+        <line x1="52" y1="18" x2="66" y2="34" stroke="#8a2b34" stroke-width="1" opacity=".35"/>
+        <circle cx="8"  cy="10" r="3.2" fill="#8a2b34"/>
+        <circle cx="30" cy="6"  r="2.4" fill="#8a2b34" opacity=".7"/>
+        <circle cx="52" cy="18" r="3.2" fill="#8a2b34"/>
+        <circle cx="22" cy="32" r="2.4" fill="#8a2b34" opacity=".7"/>
+        <circle cx="66" cy="34" r="2.4" fill="#8a2b34" opacity=".7"/>
+      </svg>
+    </div>
+
+    <!-- To use a photo: replace the "DG" line below with:
+         <img src="profile.jpg" alt="Dafna Gelbgiser"> -->
+    <div class="avatar">DG</div>
+
+    <p class="name">Dafna Gelbgiser</p>
+    <p class="role">PhD · Faculty, Department of Labor Studies, Tel Aviv University</p>
+
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Selected Ongoing Projects</a></li>
+        <li><a href="publications.html" aria-current="page">Published Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="ids">
+      <p><span class="lbl">Email</span><a href="mailto:dgelbgiser@tauex.tau.ac.il">dgelbgiser@tauex.tau.ac.il</a></p>
+      <p><span class="lbl">ORCID</span>0000-0001-6557-3895</p>
+      <p><span class="lbl">Scopus ID</span>36173757400</p>
+      <p><span class="lbl">Web of Science</span>AAG-4875-2019</p>
+    </div>
+  </aside>
+
+  <!-- ========== PAGE CONTENT ========== -->
+  <main>
+    <p class="eyebrow">Publications</p>
+    <h1 class="page">Published work</h1>
+
+    <p class="pub-group">Peer-reviewed journal articles</p>
+    <p class="note">Most of the papers are open access. If you cannot find a paper, please <a href="contact.html">contact me</a>.</p>
+
+    <ol class="pubs">
+      <li>Gelbgiser, Dafna and Oded Mcdossi. <a href="https://doi.org/10.1093/sf/soaf174">"Diverging Pathways: First-Year College Courses and the Gender Gap in STEM Degree Attainment."</a> In press, <em>Social Forces</em>.</li>
+
+      <li>Israeli, Noa, Dafna Gelbgiser, and Haya Stier (2025). <a href="https://doi.org/10.1162/EUSO.a.83">"The Gendered Division of Paid Labor among Families of Children with Disabilities — A Comparative Approach."</a> In press, <em>European Societies</em>.</li>
+
+      <li>Gelbgiser, Dafna and Limor Gabay-Egozi (equal authorship) (2025). <a href="https://www.sciencedirect.com/science/article/pii/S0276562425000654">"The Gendered Value of Education in the 'College for All' Era and the Role of Literacy and Numeracy Skills."</a> <em>Research in Social Stratification and Mobility</em> 99: 101074. (Online appendix available <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_0d1a5b0f349c434abd74167b236083a1.pdf">here</a>.)</li>
+
+      <li>Gelbgiser, Dafna and Sigal Alon (2025). <a href="https://read.dukeupress.edu/demography/article/62/3/1029/401043/Segregation-Choices-and-Inequality-in-Educational">"Segregation, Choices, and Inequality in Educational Outcomes: Evidence From Revealed Choice Data."</a> <em>Demography</em> 62(3): 1029–1058.</li>
+
+      <li>Gelbgiser, Dafna and Sigal Alon (2024). <a href="https://doi.org/10.1177/00380407241238726">"Match Pathways and College Graduation: A Longitudinal and Multidimensional Framework for Academic Mismatch."</a> <em>Sociology of Education</em> 97(3): 252–275.</li>
+
+      <li>Haupt, Andreas and Dafna Gelbgiser (equal authorship) (2024). <a href="https://www.tandfonline.com/doi/full/10.1080/14616696.2023.2271963">"The Unequal Distribution of Cognitive Household Labor and the Mental Load."</a> <em>European Societies</em> 26(3): 828–854.</li>
+
+      <li>Gelbgiser, Dafna (2021). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_d71e68ffc1784f45ba4abb1b1d9030ef.pdf">"Socioeconomic Segregation, Campus Social Context, and Disparities in Bachelor's Degree Attainment."</a> <em>Demography</em> 58(3): 1039–1064. (Online appendix available <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_3a4ddd9bc7d049c8b793c34f4f832363.pdf">here</a>.)</li>
+
+      <li>Weeden, Kim A., Dafna Gelbgiser, and Stephen L. Morgan (2020). <a href="https://journals.sagepub.com/doi/pdf/10.1177/0038040720928484">"Pipeline Dreams: Occupational Plans and Gender Differences in STEM Major Persistence and Completion."</a> <em>Sociology of Education</em> 93(4): 297–314.</li>
+
+      <li>Gelbgiser, Dafna (2018). <a href="https://academic.oup.com/sf/article-abstract/96/4/1785/4967674">"College for All, Degrees for Few: For-Profit Colleges and Socioeconomic Inequality in Degree Attainment."</a> <em>Social Forces</em> 96(4): 1785–1824.</li>
+
+      <li>Gelbgiser, Dafna and Kyle Albert (equal authorship) (2018). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_04ddf60f0ee54f479eed82d1a73cddc3.pdf">"Green for All? Gender Segregation and Emerging Green Fields of Study in US Higher Education."</a> <em>Social Problems</em> 65(4): 564–583.</li>
+
+      <li>Weeden, Kim A., Sarah Thébaud, and Dafna Gelbgiser (2017). <a href="https://www.sociologicalscience.com/download/vol-4/february/SocSci_v4_123to150.pdf">"Degrees of Difference: Gender Segregation of US Doctorates by Field and Program Prestige."</a> <em>Sociological Science</em> 4: 123–150.
+        <span class="feat">Featured in <a href="https://www.insidehighered.com/news/2017/02/08/study-sees-gender-gaps-phd-programs-discipline-and-prestige">Inside Higher Ed</a> and <a href="http://www.sciencemag.org/careers/2017/03/how-tyranny-prestige-disadvantages-women">Science</a>.</span></li>
+
+      <li>Gelbgiser, Dafna and Sigal Alon (2016). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_962953ff7832445eab2001a1a64a705b.pdf">"Math-Oriented Fields of Study and the Race Gap in Graduation Likelihoods at Elite Colleges."</a> <em>Social Science Research</em> 58: 150–164. (Supplementary appendix <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_008ef1c4f7ab430e95c06c8bf41ce13e.pdf">here</a>.)</li>
+
+      <li>Morgan, Stephen L. and Dafna Gelbgiser (2014). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_b428ba5518094ac6aa7c32fb35da1122.pdf">"Mexican Ancestry, Immigrant Generation, and Educational Attainment in the United States."</a> <em>Sociological Science</em> 1: 397–422.</li>
+
+      <li>Morgan, Stephen L., Dafna Gelbgiser, and Kim A. Weeden (2013). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_e6295240394b4c31b90fe189905a5c06.pdf">"Feeding the Pipeline: Gender, Occupational Plans, and College Major Selection."</a> <em>Social Science Research</em> 42: 989–1005.</li>
+
+      <li>Alon, Sigal and Dafna Gelbgiser (2011). <a href="https://www.dafnagelbgiser.com/_files/ugd/93068a_8405a33e4c034e5aa5a70a793fe1ab5b.pdf">"The Female Advantage in College Academic Achievements and Horizontal Sex Segregation."</a> <em>Social Science Research</em> 40: 107–119.</li>
+    </ol>
+
+    <p class="pub-group">Other academic publications</p>
+
+    <ol class="pubs">
+      <li>Hazzan, Orit and Dafna Gelbgiser (2023). "Teaching Data Science Research Methods to Human Resources Practitioners." <em>Communications of the ACM</em> blog: <a href="https://cacm.acm.org/blogs/blog-cacm/270181-teaching-data-science-research-methods-to-human-resources-practitioners-part-one/fulltext">Part 1</a>, <a href="https://cacm.acm.org/blogs/blog-cacm/270748-teaching-data-science-research-methods-to-human-resources-practitioners-part-two/fulltext">Part 2</a>, <a href="https://cacm.acm.org/blogs/blog-cacm/271276-teaching-data-science-research-methods-to-human-resources-practitioners-part-three/fulltext">Part 3</a>, <a href="https://cacm.acm.org/blogs/blog-cacm/273451-teaching-data-science-research-methods-to-human-resources-practitioners-part-4/fulltext">Part 4</a>.</li>
+
+      <li>Weeden, Kim A., Mary Newhart, and Dafna Gelbgiser (2018). <a href="https://inequality.stanford.edu/sites/default/files/Pathways_SOTU_2018_occupational-segregation.pdf">"Occupational Segregation."</a> In "State of the Union: The Poverty and Inequality Report," ed. Stanford Center on Poverty and Inequality, special issue, <em>Pathways Magazine</em>.</li>
+
+      <li>Gelbgiser, Dafna (2016). <a href="https://journals.aom.org/doi/10.5465/ambpp.2016.317">"College for All, Degrees for Few: For-Profit Colleges and Socioeconomic Inequality"</a> (abridged 6-page version). Best Paper Proceedings of the 2016 Academy of Management Annual Meeting.</li>
+    </ol>
+  </main>
+
+</div>
+</body>
+</html>
